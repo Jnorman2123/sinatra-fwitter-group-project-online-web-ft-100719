@@ -8,6 +8,7 @@ class TweetsController < ApplicationController
       redirect "/login"
     end
   end
+<<<<<<< HEAD
 
   get '/tweets/new' do
     if Helpers.logged_in?(session)
@@ -76,5 +77,20 @@ class TweetsController < ApplicationController
       redirect "/login"
     end
   end
+=======
+>>>>>>> 8c62d3b1c3077f382efc1ad2aaf18953a0be25bf
 
+  get '/tweets/new' do
+
+    erb :"/tweets/new"
+  end
+
+  post '/tweets' do
+
+    redirect "/tweets"
+  end
+
+  get '/tweets/:id' do
+
+  end
 end

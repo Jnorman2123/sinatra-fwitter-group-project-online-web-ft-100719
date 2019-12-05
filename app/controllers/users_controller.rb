@@ -44,7 +44,11 @@ class UsersController < ApplicationController
     redirect "/login"
   end
 
+<<<<<<< HEAD
   get '/users/:slug' do
+=======
+  get '/user/:slug' do
+>>>>>>> 8c62d3b1c3077f382efc1ad2aaf18953a0be25bf
     @user = User.find_by_slug(params[:slug])
 
     erb :"/users/show"
